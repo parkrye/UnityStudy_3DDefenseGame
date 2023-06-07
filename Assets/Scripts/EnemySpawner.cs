@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -21,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
     {
         while (true)
         {
-            GameObject enemy = GameManager.Resource.Instantiate<GameObject>("Prefabs/EnemyWizard", waypoints[0].transform.position, waypoints[0].transform.rotation, true);
+            GameObject enemy = GameManager.Resource.Instantiate<GameObject>("Prefabs/EnemyWizard", waypoints[0].transform.position, waypoints[0].transform.rotation, transform, true);
             enemy.GetComponent<EnemyMover>().StartMove(waypoints);
             yield return new WaitForSeconds(spawnTime);
         }

@@ -33,6 +33,7 @@ public class EnemyMover : MonoBehaviour
             }
             else
             {
+                agent.enabled = false;
                 GameManager.Resource.Destroy(gameObject);
             }
         }

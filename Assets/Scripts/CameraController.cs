@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour
     {
         Pointer();
         Zoom();
+        Boundary();
     }
 
     void Pointer()
@@ -31,6 +32,36 @@ public class CameraController : MonoBehaviour
     void Zoom()
     {
         transform.Translate(Vector3.forward * zoomScroll * zoomSpeed * Time.deltaTime, Space.Self);
+    }
+
+    void Boundary()
+    {
+        if (transform.position.x < -50f)
+        {
+            transform.position = new Vector3(-50f, transform.position.y, transform.position.z);
+        }
+        else if (transform.position.x > 20f)
+        {
+            transform.position = new Vector3(20f, transform.position.y, transform.position.z);
+        }
+
+        if (transform.position.y < 20f)
+        {
+            transform.position = new Vector3(transform.position.x, 20f, transform.position.z);
+        }
+        else if (transform.position.y > 100f)
+        {
+            transform.position = new Vector3(transform.position.x, 100f, transform.position.z);
+        }
+
+        if (transform.position.z > 0f)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
+        }
+        else if (transform.position.z < -110f)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -110f);
+        }
     }
 
     void OnPointer(InputValue inputValue)

@@ -10,12 +10,11 @@ public class PoolManager : MonoBehaviour
     Transform poolRoot;
     Canvas canvasRoot;
 
-    private void Awake()
+    void Awake()
     {
         poolDic = new Dictionary<string, ObjectPool<GameObject>>();
         poolContainer = new Dictionary<string, Transform>();
-        //poolRoot = new GameObject("PoolRoot").transform;
-        poolRoot = transform;
+        poolRoot = new GameObject("PoolRoot").transform;
         canvasRoot = GameManager.Resource.Instantiate<Canvas>("UI/Canvas");
     }
 
@@ -129,7 +128,7 @@ public class PoolManager : MonoBehaviour
         }
     }
 
-    private void CreatePool(string key, GameObject prefab)
+    void CreatePool(string key, GameObject prefab)
     {
         GameObject root = new GameObject();
         root.gameObject.name = $"{key}Container";
@@ -253,7 +252,7 @@ public class PoolManager : MonoBehaviour
         }
     }
 
-    private void CreateUIPool(string key, GameObject prefab)
+    void CreateUIPool(string key, GameObject prefab)
     {
         ObjectPool<GameObject> pool = new ObjectPool<GameObject>(
             createFunc: () =>
