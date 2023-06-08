@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbaaf9a2a50087408d89c2ae317d52b, type: 3}
+  m_Name: ArcherTower
+  m_EditorClassIdentifier: 
+  towers:
+  - tower: {fileID: -347891974747069377, guid: acb9eeacca0ea814ab424f6393e71859, type: 3}
+    damage: 2
+    range: 30
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0
+  - tower: {fileID: 633781877857024221, guid: 4a779118b92680b4bbf0379a9814586c, type: 3}
+    damage: 3
+    range: 30
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0
+  - tower: {fileID: -5393702144048966172, guid: 5dc256dae1ca2eb4eb02bc2f8b894a1b, type: 3}
+    damage: 4
+    range: 30
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0
+  - tower: {fileID: 3205040892337492749, guid: 96f7cf626bdd17240b28aeced787b27d, type: 3}
+    damage: 5
+    range: 30
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0

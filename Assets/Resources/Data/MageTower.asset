@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbaaf9a2a50087408d89c2ae317d52b, type: 3}
+  m_Name: MageTower
+  m_EditorClassIdentifier: 
+  towers:
+  - tower: {fileID: 7337793121067126229, guid: be0b768028397264d9c378dbd4f93277, type: 3}
+    damage: 1
+    range: 60
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0
+  - tower: {fileID: -1865390902829436834, guid: e58080f49911f2b4daa4c5be922b82a4, type: 3}
+    damage: 2
+    range: 60
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0
+  - tower: {fileID: -839446348220744690, guid: 9151417fa9caea340b9ae1e93c58a4b4, type: 3}
+    damage: 3
+    range: 60
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0
+  - tower: {fileID: -1047447932685414040, guid: fa67eafe5fc7dcf4da784d12781f2ef2, type: 3}
+    damage: 4
+    range: 60
+    speed: 1
+    buildTime: 0
+    buildCost: 0
+    sellCost: 0

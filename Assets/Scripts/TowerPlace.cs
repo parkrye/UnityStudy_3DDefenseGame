@@ -17,7 +17,11 @@ public class TowerPlace : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     {
         if(eventData.button == PointerEventData.InputButton.Left)
         {
+            BuildInGameUI buildInGameUI = GameManager.UI.ShowInGameUI<BuildInGameUI>("UI/BuildInGameUI");
+            buildInGameUI.SetTarget(transform);
+            buildInGameUI.SetOffset(new Vector3(0f, 100f, 100f));
 
+            buildInGameUI.towerPlace = this;
         }
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
@@ -33,5 +37,11 @@ public class TowerPlace : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     public void OnPointerExit(PointerEventData eventData)
     {
         render.material.color = outMouse;
+    }
+
+    public void BuildTower(TowerData data)
+    {
+        GameManager.Resource.Destroy(gameObject);
+        GameManager.Resource.Instantiate(data.towers[0].tower, transform.position, transform.rotation);
     }
 }

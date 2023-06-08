@@ -6,7 +6,7 @@ public class SettingSceneUI : SceneUI
     {
         base.Awake();
 
-        buttons["Info"].onClick.AddListener(() => { GameManager.UI.ShowPopupUI("UI/InfoPopupUI"); });
+        buttons["Info"].onClick.AddListener(() => { GameManager.UI.ShowWindowUI("UI/InfoWindowUI"); });
         buttons["Volume"].onClick.AddListener(ClickVolumeButton);
         buttons["Setting"].onClick.AddListener(ClickSettingButton);
     }
