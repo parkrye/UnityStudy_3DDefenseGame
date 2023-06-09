@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4625529891845724}
   - component: {fileID: 33207684337439080}
   - component: {fileID: 23131126585102086}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TB_CanonTower_Lvl3_Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33917400407228750}
   - component: {fileID: 23187053197154270}
   - component: {fileID: 7142442400864121635}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TB_CanonTower_Lvl3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,3 +181,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: ce2ee284b144642419c4ecae2a040bc5, type: 2}
+  enemyList: []

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4563201954033632}
   - component: {fileID: 33872782499275610}
   - component: {fileID: 23680040055161750}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TB_MageTower_Lvl4_A_Crystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 33565905406009508}
   - component: {fileID: 23624626111244914}
   - component: {fileID: -1047447932685414040}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TB_MageTower_Lvl4_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,3 +181,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: f498b5e08ee5ea646b70136dbef413e2, type: 2}
+  enemyList: []

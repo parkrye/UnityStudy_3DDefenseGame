@@ -11,7 +11,11 @@ GameObject:
   - component: {fileID: 176736478116398442}
   - component: {fileID: 5439659524514685153}
   - component: {fileID: -2759357577492292038}
-  m_Layer: 0
+  - component: {fileID: -6609810667918922403}
+  - component: {fileID: 2814252436151464035}
+  - component: {fileID: -7717951135760544561}
+  - component: {fileID: 7098153688554711657}
+  m_Layer: 3
   m_Name: EnemySpearman
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -71,6 +75,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 5439659524514685153}
   nowPoint: 0
+--- !u!136 &-6609810667918922403
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786460068738456990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!54 &2814252436151464035
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786460068738456990}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-7717951135760544561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786460068738456990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f334073c1f3f6814eaca2a1aa93bd7f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 10
+  OnDied:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDamaged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7098153688554711657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786460068738456990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796562b982a17d9498d601e1af530bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyController: {fileID: 0}
+  slider: {fileID: 0}
 --- !u!1001 &115589765368472313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81,6 +148,22 @@ PrefabInstance:
     - target: {fileID: 1246070444819080, guid: a6271366fabb2364382b95436057922e, type: 3}
       propertyPath: m_Name
       value: TB_Soldier_Spearman_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246070444819080, guid: a6271366fabb2364382b95436057922e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262353465354870, guid: a6271366fabb2364382b95436057922e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1814076539729930, guid: a6271366fabb2364382b95436057922e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975261523290938, guid: a6271366fabb2364382b95436057922e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4096475833891026, guid: a6271366fabb2364382b95436057922e, type: 3}
       propertyPath: m_RootOrder
@@ -140,6 +223,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 176736478116398442}
     m_Modifications:
+    - target: {fileID: 452674014191440692, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1166491566734235804, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5648425372251066013, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -151,6 +242,18 @@ PrefabInstance:
     - target: {fileID: 6554034816627499966, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
       propertyPath: m_Name
       value: HPCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554034816627499966, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723101219786854720, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882208842031985686, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9061991731616607159, guid: ebcd1282852154c41b8cfadaae22d6c0, type: 3}
       propertyPath: m_Pivot.x

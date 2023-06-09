@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33396508346842494}
   - component: {fileID: 23761655817698686}
   - component: {fileID: 633781877857024221}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TB_ArcherTower_Lvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,3 +97,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 4719640a10ad0814a9165409154126d8, type: 2}
+  enemyList: []
